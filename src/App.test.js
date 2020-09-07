@@ -10,5 +10,5 @@ test('renders learn react link', () => {
 
 afterAll(() => setTimeout(() => {
   console.log('exit');
-  process.exit();
+  process.exit(0);
 }, 1000))
