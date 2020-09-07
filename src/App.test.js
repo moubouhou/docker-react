@@ -7,3 +7,8 @@ test('renders learn react link', () => {
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+afterAll(() => setTimeout(() => {
+  console.log('exit');
+  process.exit();
+}, 1000))
